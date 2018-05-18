@@ -6,6 +6,7 @@ public class Multiplication {
         int b = 42;
 
         // Program your solution here. Remember to use variables a and b!
+        System.out.println(a + " * " + b + " = " + a * b);
     }
 
 }
