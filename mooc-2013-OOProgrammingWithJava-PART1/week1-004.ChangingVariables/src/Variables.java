@@ -4,8 +4,10 @@ public class Variables {
         // CHANGE THESE:
 
         int chickenCount = 3;
+        chickenCount = 9000;
         double baconWeight = 5.5;
-        String tractor = "There is none";
+        baconWeight = 0.1;
+        String tractor = "Zetor";
 
         // DO NOT TOUCH THE BELOW:
 
