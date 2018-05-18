@@ -1,3 +1,5 @@
+// Create a program that prints all whole numbers from 1 to the number the user enters.
+
 import java.util.Scanner;
 
 public class up_to_number
