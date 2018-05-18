@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite errors="0" failures="0" hostname="campus-016-219.ucdavis.edu" name="NameTest" skipped="0" tests="1" time="0.322" timestamp="2018-05-17T20:11:48">
+<testsuite errors="0" failures="0" hostname="Stanleys-MacBook-Pro.local" name="NameTest" skipped="0" tests="1" time="0.333" timestamp="2018-05-18T05:35:13">
   <properties>
     <property name="netbeans.autoupdate.country" value="US" />
     <property name="javac.test.classpath" value=":build/classes:lib/hamcrest-core-1.3.jar:lib/junit-4.11.jar:lib/edu-test-utils-0.4.2.jar" />
@@ -38,7 +38,7 @@
     <property name="user.name" value="stanleycheah" />
     <property name="manifest.available+main.class" value="true" />
     <property name="libs.swing-layout.maven-pom" value="" />
-    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner NameTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false showoutput=true outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=true formatter=org.apache.tools.ant.taskdefs.optional.junit.BriefJUnitResultFormatter formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/Users/stanleycheah/Documents/Developer/mooc_java/java-course/mooc-2013-OOProgrammingWithJava-PART1/week1-001.Name/build/test/results/TEST-NameTest.xml crashfile=/Users/stanleycheah/Documents/Developer/mooc_java/java-course/mooc-2013-OOProgrammingWithJava-PART1/week1-001.Name/build/junitvmwatcher8129194416488090306.properties propsfile=/Users/stanleycheah/Documents/Developer/mooc_java/java-course/mooc-2013-OOProgrammingWithJava-PART1/week1-001.Name/build/junit6885251639369383685.properties" />
+    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner NameTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false showoutput=true outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=true formatter=org.apache.tools.ant.taskdefs.optional.junit.BriefJUnitResultFormatter formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/Users/stanleycheah/Documents/Developer/mooc_java/java-course/mooc-2013-OOProgrammingWithJava-PART1/week1-001.Name/build/test/results/TEST-NameTest.xml crashfile=/Users/stanleycheah/Documents/Developer/mooc_java/java-course/mooc-2013-OOProgrammingWithJava-PART1/week1-001.Name/build/junitvmwatcher3491019886671599929.properties propsfile=/Users/stanleycheah/Documents/Developer/mooc_java/java-course/mooc-2013-OOProgrammingWithJava-PART1/week1-001.Name/build/junit8881054618813735743.properties" />
     <property name="build.classes.dir" value="build/classes" />
     <property name="file.reference.edu-test-utils-0.4.2.jar" value="lib/edu-test-utils-0.4.2.jar" />
     <property name="jnlp.descriptor" value="application" />
@@ -76,7 +76,7 @@
     <property name="javac.debug" value="true" />
     <property name="javadoc.splitindex" value="true" />
     <property name="file.separator" value="/" />
-    <property name="javac.includesfile.binary" value="/Users/stanleycheah/Documents/Developer/mooc_java/java-course/mooc-2013-OOProgrammingWithJava-PART1/week1-001.Name/null1934731204" />
+    <property name="javac.includesfile.binary" value="/Users/stanleycheah/Documents/Developer/mooc_java/java-course/mooc-2013-OOProgrammingWithJava-PART1/week1-001.Name/null1184539796" />
     <property name="libs.junit_4.maven-pom" value="" />
     <property name="mkdist.disabled" value="false" />
     <property name="javac.test.processorpath" value=":build/classes:lib/hamcrest-core-1.3.jar:lib/junit-4.11.jar:lib/edu-test-utils-0.4.2.jar" />
@@ -319,7 +319,7 @@
     <property name="platform.active" value="default_platform" />
     <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit" />
   </properties>
-  <testcase classname="NameTest" name="test" time="0.007" />
+  <testcase classname="NameTest" name="test" time="0.003" />
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
