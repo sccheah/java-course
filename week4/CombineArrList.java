@@ -10,8 +10,9 @@ public class CombineArrList
 {
     public static void combine(ArrayList<Integer> l1, ArrayList<Integer> l2)
     {
-        for(Integer num : l2)
-            l1.add(num);
+        //for(Integer num : l2)
+        //    l1.add(num);
+        l1.addAll(l2);
     }
 
     public static void main(String[] args)
