@@ -25,8 +25,10 @@ public class Person
 
     public void become_older()
     {
-        this.age++;
+        this.become_older(1);
     }
+
+    public void become_older(int years) { this.age += years; }
 
     public boolean is_adult()
     {
@@ -58,5 +60,15 @@ public class Person
     public String toString()
     {
         return this.name + ", age " + this.age + " years";
+    }
+
+    public static void main(String[] args) {
+        Person pekka = new Person("Pekka", 24);
+
+        System.out.println(pekka);
+        pekka.become_older();
+        System.out.println(pekka);
+        pekka.become_older(10);
+        System.out.println(pekka);
     }
 }
