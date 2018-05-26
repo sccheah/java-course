@@ -56,6 +56,16 @@ public class Person
         return this.weight / (heightDividedByHundred * heightDividedByHundred);
     }
 
+    public boolean olderThan(Person compared)
+    {
+        // can still access age in compared.age bc private variables can be read in all
+        //      methods that the class in question contains
+        if (this.age > compared.age)
+            return true;
+
+        return false;
+    }
+
     // with this, we can just call something like System.out.println(bob);
     public String toString()
     {
