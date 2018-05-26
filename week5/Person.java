@@ -1,9 +1,9 @@
 public class Person
 {
     private String name;
-    private int age;
     private int height;
     private int weight;
+    private MyDate birthMyDate;
 
     public Person(String initialName)
     {
@@ -17,6 +17,15 @@ public class Person
         this.weight = 0;
         this.height = 0;
     }
+
+    public Person(String name, int day, int month, int year)
+    {
+        this.name = name;
+        this.weight = 0;
+        this.height = 0;
+        this.birthMyDate = new MyDate(day, month, year);
+    }
+
 
     public void print_person()
     {
@@ -69,16 +78,15 @@ public class Person
     // with this, we can just call something like System.out.println(bob);
     public String toString()
     {
-        return this.name + ", age " + this.age + " years";
+        return this.name + ", born " + this.birthMyDate;
     }
 
     public static void main(String[] args) {
-        Person pekka = new Person("Pekka", 24);
+        Person martin = new Person("Martin", 24, 4, 1983);
 
-        System.out.println(pekka);
-        pekka.become_older();
-        System.out.println(pekka);
-        pekka.become_older(10);
-        System.out.println(pekka);
+        Person juhana = new Person("Juhana", 17, 9, 1985);
+
+        System.out.println( martin );
+        System.out.println( juhana );
     }
 }
