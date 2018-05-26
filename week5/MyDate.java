@@ -13,6 +13,37 @@ public class MyDate
         this.year = year;
     }
 
+    public void advance()
+    {
+        day++;
+
+        if (day > 30)
+        {
+            day = 1;
+            month++;
+
+            if (month > 12)
+            {
+                month = 1;
+                year++;
+            }
+        }
+    }
+
+    public void advance(int numberOfDays)
+    {
+        for (int i = 0; i < numberOfDays; i++)
+            advance();
+    }
+
+    public MyDate afterNumberOfDays(int days)
+    {
+        MyDate newMyDate = new MyDate(day, month, year);
+
+        newMyDate.advance(days);
+        return  newMyDate;
+    }
+
     public String toString()
     {
         return this.day + "." + this.month + "." + this.year;
@@ -34,18 +65,13 @@ public class MyDate
     }
 
     public static void main(String[] args) {
-        MyDate p1 = new MyDate(14, 2, 2011);
-        MyDate p2 = new MyDate(21, 2, 2011);
-        MyDate p3 = new MyDate(1, 3, 2011);
-        MyDate p4 = new MyDate(31, 12, 2010);
-
-        System.out.println( p1 + " earlier than " + p2 + ": " + p1.earlier(p2));
-        System.out.println( p2 + " earlier than " + p1 + ": " + p2.earlier(p1));
-
-        System.out.println( p2 + " earlier than " + p3 + ": " + p2.earlier(p3));
-        System.out.println( p3 + " earlier than " + p2 + ": " + p3.earlier(p2));
-
-        System.out.println( p4 + " earlier than " + p1 + ": " + p4.earlier(p1));
-        System.out.println( p1 + " earlier than " + p4 + ": " + p1.earlier(p4));
+        MyDate day = new MyDate(25, 2, 2011);
+        MyDate newDate = day.afterNumberOfDays(7);
+        for (int i = 1; i <= 7; ++i) {
+            System.out.println("Friday after  " + i + " weeks is " + newDate);
+            newDate = newDate.afterNumberOfDays(7);
+        }
+        System.out.println("This week's Friday is " + day);
+        System.out.println("The date 790 days from this week's Friday is  " + day.afterNumberOfDays(790));
     }
 }
