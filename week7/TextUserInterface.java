@@ -52,7 +52,13 @@ public class TextUserInterface {
     }
 
     public static void main(String[] args) {
-        Scanner reader = new Scanner(System.in);
+        //Scanner reader = new Scanner(System.in);
+        String input = "translate\n" + "monkey\n"  +
+                   "translate\n" + "cheese\n" +
+                   "add\n"  + "cheese\n" + "juusto\n" +
+                   "translate\n" + "cheese\n" +
+                   "quit\n";
+        Scanner reader = new Scanner(input);
         Dictionary dictionary = new Dictionary();
 
         TextUserInterface UI = new TextUserInterface(reader, dictionary);
