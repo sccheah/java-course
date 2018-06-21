@@ -1,4 +1,4 @@
-public class Book1 implements ToBeStored {
+public class Book1 implements Item {
     private String bookWriter;
     private String bookName;
     private double weight;

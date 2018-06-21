@@ -1,4 +1,4 @@
-public class CD implements ToBeStored {
+public class CD implements Item {
     private String artist;
     private String title;
     private int publishingYear;

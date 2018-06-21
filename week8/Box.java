@@ -1,15 +1,15 @@
 import java.util.ArrayList;
 
-public class Box implements ToBeStored {
+public class Box implements Item {
     private double maxWeight;
-    private ArrayList<ToBeStored> items;
+    private ArrayList<Item> items;
 
     public Box(double maxWeight) { 
         this.maxWeight = maxWeight; 
-        items = new ArrayList<ToBeStored>();
+        items = new ArrayList<Item>();
     }
 
-    public void add(ToBeStored item) { 
+    public void add(Item item) { 
         if (weight() + item.weight() <= maxWeight)
             items.add(item); 
     }
@@ -17,7 +17,7 @@ public class Box implements ToBeStored {
     public double weight() {
         double weight = 0.0;
 
-        for (ToBeStored item : items) {
+        for (Item item : items) {
             weight += item.weight();
         }
 
