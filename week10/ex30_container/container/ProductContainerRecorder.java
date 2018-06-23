@@ -6,7 +6,7 @@ public class ProductContainerRecorder extends ProductContainer {
     public ProductContainerRecorder(String productName, double Capacity, double initialVolume) {
         super(productName, Capacity);
         containerHistory = new ContainerHistory();
-        addToTheContainer(initialVolume); // can call this even though we are the grandchild
+        addToTheContainer(initialVolume); 
     }
 
     public String history() { return containerHistory.toString(); }
